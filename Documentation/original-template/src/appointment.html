@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    {{> title-meta title="Prendre rendez-vous — SkinTherapie" }} {{> head-css}}
+</head>
+
+<body>
+
+    {{> navbar }}
+
+    <section class="md:pt-48 pt-30 lg:pb-50 md:pb-32.5 pb-25">
+        <div class="container">
+            <div class="text-center lg:mb-15 md:mb-12.5 mb-10">
+                <!-- Tag -->
+                <div class="inline-flex items-center gap-2 bg-primary-1/5 text-primary-1 text-xs font-medium uppercase px-3 py-1.5 rounded-full md:mb-5 mb-4">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary-1"></span>
+                    Réservez votre rituel
+                </div>
+
+                <!-- Title -->
+                <h1 class="text-[42px] md:text-7xl lg:text-[90px] font-heading font-medium text-primary-3 tracking-tight leading-[1.1] md:mb-6 mb-4 md:w-xl mx-auto">
+                    Planifiez votre escale bien-être
+                </h1>
+            </div>
+
+            <!-- Form Card -->
+            <div class="bg-primary-5 p-6 md:p-10 rounded-3xl md:max-w-3xl mx-auto">
+                <form class="flex flex-col">
+                    <!-- Row 1 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+                        <div class="flex flex-col">
+                            <label class="text-sm font-medium text-primary-2 mb-2.5">Nom complet*</label>
+                            <input type="text" placeholder="Votre nom et prénom" class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none text-primary-3">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-sm font-medium text-primary-2 mb-2.5">Email*</label>
+                            <input type="email" placeholder="votre@email.com" class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none text-primary-3">
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+                        <div class="flex flex-col">
+                            <label class="text-sm font-medium text-primary-2 mb-2.5">Téléphone*</label>
+                            <input type="tel" placeholder="05 35 51 18 15" class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none text-primary-3">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-sm font-medium text-primary-2 mb-2.5">Choix de la Prestation*</label>
+                            <div class="relative w-full">
+                                <select class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base text-primary-3 placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none appearance-none cursor-pointer">
+                                    <option value="">Sélectionnez une prestation</option>
+                                    <option value="Therapie-et-Reeducation">Thérapie et Rééducation</option>
+                                    <option value="Amincissement-et-Remodelage-Corporel">Amincissement et Remodelage Corporel</option>
+                                    <option value="Drainage-et-lifting">Drainage et lifting</option>
+                                    <option value="Massotherapie">Massothérapie</option>
+                                    <option value="Soin-de-visage-et-Capillaire">Soin de visage et Capillaire</option>
+                                    <option value="Beaute-et-Bien-Etre">Beauté et Bien-Être</option>
+                                    <option value="Laser-et-Technologie-Medico-Esthetique">Laser et Technologie Médico-Esthétique</option>
+                                    <option value="Biohacking-Aesthetic-Treatments">Biohacking Aesthetic Treatments</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+                        <div class="flex flex-col">
+                            <label class="text-sm font-medium text-primary-2 mb-2.5">Date souhaitée*</label>
+                            <input type="date" class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none text-primary-3">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-sm font-medium text-primary-2 mb-2.5">Heure*</label>
+                            <input type="time" placeholder="--:--" class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none text-primary-3">
+                        </div>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="flex flex-col mb-5">
+                        <label class="text-sm font-medium text-primary-2 mb-2.5">Notes ou précautions</label>
+                        <textarea placeholder="Partagez-nous vos attentes ou besoins spécifiques" rows="4" class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none resize-none text-primary-3"></textarea>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="flex items-center gap-3 mb-5">
+                        <input type="checkbox" id="agree" class="rounded border border-primary-2/30 text-primary-1 focus:ring-primary-1 size-5 cursor-pointer mt-0.5">
+                        <label for="agree" class="text-xs md:text-sm text-primary-2 cursor-pointer select-none font-medium leading-tight">
+                            J'accepte d'être recontacté(e) par SKINTHERAPIE concernant ma réservation.
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit" class="inline-flex items-center justify-center bg-primary-1 hover:bg-white text-white hover:text-primary-1 border border-transparent hover:border-primary-1 py-2.5 px-5 rounded-full font-semibold transition-colors text-sm text-nowrap">
+                            Confirmer ma demande
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="overflow-hidden">
+        <div class="container">
+            <div class="text-center lg:mb-15 md:mb-12.5 mb-10">
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-heading font-medium text-primary-3 tracking-tight mb-2.5">
+                    Le soin se ressent
+                </h2>
+                <p class="text-primary-2 text-sm md:text-base">
+                    Des expériences authentiques partagées par ceux qui nous confient leur peau.
+                </p>
+            </div>
+
+            <div class="w-full relative overflow-hidden">
+                <div class="flex flex-row gap-5 w-max animate-marquee-horizontal hover:[animation-play-state:paused] cursor-pointer py-2">
+                    <!-- Group 1 -->
+                    <div class="flex flex-row gap-5 shrink-0">
+                        <!-- Card 1 -->
+                        <div class="w-72 sm:w-80 md:w-96 lg:w-100 bg-white rounded-2xl p-7.5 flex flex-col justify-between shadow-sm border border-primary-5/30 shrink-0">
+                            <div class="md:mb-19 mb-12">
+                                <div class="flex items-center mb-1.5 text-primary-1">
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                </div>
+                                <p class="text-base leading-[1.2]">
+                                    Ma peau s'est enfin apaisée après des années d'attente. Le plan de soin était clair, naturel et d'une efficacité incroyable.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <img src="images/avatar/avatar-12.webp" class="size-10 md:size-11 rounded-full object-cover">
+                                <div>
+                                    <div class="font-semibold text-sm">Sofia Hale</div>
+                                    <div class="text-primary-2 text-sm">Actrice</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="w-72 sm:w-80 md:w-96 lg:w-100 bg-white rounded-2xl p-7.5 flex flex-col justify-between shadow-sm border border-primary-5/30 shrink-0">
+                            <div class="md:mb-19 mb-12">
+                                <div class="flex items-center mb-1.5 text-primary-1">
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                </div>
+                                <p class="text-base leading-[1.2]">
+                                    Une équipe à l'écoute qui explique chaque geste. Mon teint est visiblement plus uniforme et éclatant grâce aux rituels.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <img src="images/avatar/avatar-9.webp" class="size-10 md:size-11 rounded-full object-cover">
+                                <div>
+                                    <div class="font-semibold text-sm">Emma Rodriguez</div>
+                                    <div class="text-primary-2 text-sm">Consultante Marketing</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="w-72 sm:w-80 md:w-96 lg:w-100 bg-white rounded-2xl p-7.5 flex flex-col justify-between shadow-sm border border-primary-5/30 shrink-0">
+                            <div class="md:mb-19 mb-12">
+                                <div class="flex items-center mb-1.5 text-primary-1">
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                </div>
+                                <p class="text-base leading-[1.2]">
+                                    De la consultation au suivi, l'accompagnement est d'une grande douceur. La texture de ma peau a changé en quelques semaines.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <img src="images/avatar/avatar-1.webp" class="size-10 md:size-11 rounded-full object-cover">
+                                <div>
+                                    <div class="font-semibold text-sm">Olivia Chen</div>
+                                    <div class="text-primary-2 text-sm">Entrepreneure</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="w-72 sm:w-80 md:w-96 lg:w-100 bg-white rounded-2xl p-7.5 flex flex-col justify-between shadow-sm border border-primary-5/30 shrink-0">
+                            <div class="md:mb-19 mb-12">
+                                <div class="flex items-center mb-1.5 text-primary-1">
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                </div>
+                                <p class="text-base leading-[1.2]">
+                                    J'appréhendais les soins, mais le résultat est d'un naturel absolu. Un effet frais et reposé, exactement ce que je cherchais.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <img src="images/avatar/avatar-7.webp" class="size-10 md:size-11 rounded-full object-cover">
+                                <div>
+                                    <div class="font-semibold text-sm">Priya Mehta</div>
+                                    <div class="text-primary-2 text-sm">Product Manager</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Group 2 (identical duplicate for marquee) -->
+                    <div class="flex flex-row gap-5 shrink-0">
+                        <div class="w-72 sm:w-80 md:w-96 lg:w-100 bg-white rounded-2xl p-7.5 flex flex-col justify-between shadow-sm border border-primary-5/30 shrink-0">
+                            <div class="md:mb-19 mb-12">
+                                <div class="flex items-center mb-1.5 text-primary-1">
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                </div>
+                                <p class="text-base leading-[1.2]">
+                                    Ma peau s'est enfin apaisée après des années d'attente. Le plan de soin était clair, naturel et d'une efficacité incroyable.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <img src="images/avatar/avatar-12.webp" class="size-10 md:size-11 rounded-full object-cover">
+                                <div>
+                                    <div class="font-semibold text-sm">Sofia Hale</div>
+                                    <div class="text-primary-2 text-sm">Actrice</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-72 sm:w-80 md:w-96 lg:w-100 bg-white rounded-2xl p-7.5 flex flex-col justify-between shadow-sm border border-primary-5/30 shrink-0">
+                            <div class="md:mb-19 mb-12">
+                                <div class="flex items-center mb-1.5 text-primary-1">
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                    <i class="iconify tabler--star-filled size-4"></i>
+                                </div>
+                                <p class="text-base leading-[1.2]">
+                                    Une équipe à l'écoute qui explique chaque geste. Mon teint est visiblement plus uniforme et éclatant grâce aux rituels.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <img src="images/avatar/avatar-9.webp" class="size-10 md:size-11 rounded-full object-cover">
+                                <div>
+                                    <div class="font-semibold text-sm">Emma Rodriguez</div>
+                                    <div class="text-primary-2 text-sm">Consultante Marketing</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute inset-y-0 inset-s-0 w-10 md:w-32 lg:w-58 bg-linear-to-r from-primary-4 to-primary-4/0 z-10 pointer-events-none"></div>
+                <div class="absolute inset-y-0 inset-e-0 w-10 md:w-32 lg:w-58 bg-linear-to-l from-primary-4 to-primary-4/0 z-10 pointer-events-none"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions Before Appointment Section -->
+    <section class="lg:py-50 md:py-32.5 py-25">
+        <div class="container">
+            <div class="lg:w-4xl mx-auto">
+                <div class="bg-primary-5 rounded-4xl md:p-10 p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-heading font-medium text-primary-3 leading-tight mb-2.5">
+                            Une question avant de réserver ?
+                        </h3>
+                        <p class="text-primary-2 text-sm md:text-base w-xs">
+                            Contactez-nous pour définir ensemble le rituel le plus adapté à votre peau.
+                        </p>
+                    </div>
+                    <div class="inline-block">
+                        <a href="contact.html" class="flex items-center gap-2.5 bg-primary-1 transition-colors rounded-full ps-2.5 py-2.5 pe-5 text-sm font-medium group text-white">
+                            <div class="flex items-center justify-center size-6 bg-white rounded-full">
+                                <img src="/images/icons/icon-1.svg" alt="Icon" class="transition-transform duration-300 group-hover:rotate-180">
+                            </div>
+                            Nous contacter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="lg:pb-50 md:pb-32.5 pb-25">
+        <div class="container-medium">
+            <div class="max-w-xl mx-auto text-center md:mb-15 mb-10">
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-heading font-medium text-primary-3 tracking-tight mb-2.5">
+                    Une peau vraie, une lumière sensible
+                </h2>
+                <p class="text-primary-2 text-sm md:text-base md:mb-7.5 mb-4">
+                    Un accompagnement sur-mesure, des gestes précis et une expertise reconnue.
+                </p>
+                <div class="inline-block shrink-0">
+                    <a href="contact.html" class="flex items-center gap-2.5 bg-primary-1 transition-colors rounded-full ps-2.5 py-2.5 pe-5 text-sm font-medium group text-white">
+                        <div class="flex items-center justify-center size-6 bg-white rounded-full">
+                            <img src="/images/icons/icon-1.svg" alt="Icon" class="transition-transform duration-300 group-hover:rotate-180">
+                        </div>
+                        Découvrir l'univers
+                    </a>
+                </div>
+            </div>
+
+            <!-- Grid Layout of Gallery -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5" data-toggle="gallery">
+                <!-- Left Column -->
+                <a href="/images/services/service-1.webp" class="md:rounded-4xl rounded-2xl overflow-hidden aspect-[1/1] lg:aspect-[810/819] w-full group relative block">
+                    <img src="/images/services/service-1.webp" alt="Rituel SkinTherapie" class="w-full h-full object-cover">
+                </a>
+
+                <!-- Right Column -->
+                <div class="grid grid-cols-1 gap-5">
+                    <div class="grid grid-cols-2 gap-5">
+                        <a href="/images/gallary/gallery-7.webp" class="md:rounded-4xl rounded-2xl overflow-hidden aspect-[1/1] lg:aspect-[600/607] w-full group relative block">
+                            <img src="/images/gallary/gallery-7.webp" alt="Détail Matière" class="w-full h-full object-cover">
+                        </a>
+                        <a href="/images/gallary/gallery-8.webp" class="md:rounded-4xl rounded-2xl overflow-hidden aspect-[1/1] lg:aspect-[600/607] w-full group relative block">
+                            <img src="/images/gallary/gallery-8.webp" alt="Lumière Naturelle" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+                    <a href="/images/about/about-12.webp" class="md:rounded-4xl rounded-2xl overflow-hidden aspect-[2/1] lg:aspect-[810/395] w-full group relative block">
+                        <img src="/images/about/about-12.webp" alt="Le Geste" class="w-full h-full object-cover">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{> footer }}
+
+</body>
+
+</html>

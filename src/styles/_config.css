@@ -1,0 +1,60 @@
+/* -------------------------------------------------------
+   Typography:
+   01  Andora Modern Serif  — Titres, phrases de campagne et éditorial
+   02  Aileron              — Informations, Tarifs et repères
+------------------------------------------------------- */
+
+/* Andora Modern Serif — Self-hosted */
+/* Place font files in /public/fonts/AndoraModernSerif.woff2 & .woff */
+@font-face {
+  font-family: 'Andora Modern Serif';
+  src:
+    url('/fonts/AndoraModernSerif.woff2') format('woff2'),
+    url('/fonts/AndoraModernSerif.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Andora Modern Serif';
+  src:
+    url('/fonts/AndoraModernSerif-Medium.woff2') format('woff2'),
+    url('/fonts/AndoraModernSerif-Medium.woff') format('woff');
+  font-weight: 500 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-body: 'Aileron', 'Open Sans', sans-serif;
+  --font-heading: 'Andora Modern Serif', 'Hedvig Letters Serif', serif;
+
+  /* Core palette — mapped to site roles */
+  --color-primary: #e5f0e0; /* Primary sage — brand surfaces and filled buttons */
+  --color-primary-1: #45663e; /* Forest accent — links, outlines and focus */
+  --color-primary-2: #52604f; /* Muted green — body text */
+  --color-primary-3: #263e2e; /* Deep forest — headings and button text */
+  --color-primary-4: #f4faf2; /* Soft ivory-green — page background */
+  --color-primary-5: var(--color-primary); /* Primary sage — cards and sections */
+
+  /* Extra palette tokens for decorative use */
+  --color-warm-sand: #8ca783;
+  --color-desert-taupe: #c8d8bf;
+  --color-olive-moss: var(--color-primary-3);
+  --color-clay-rose: var(--color-primary-1);
+  --color-soft-linen: var(--color-primary);
+
+  --color-default-50: var(--color-zinc-50);
+  --color-default-100: var(--color-zinc-100);
+  --color-default-200: var(--color-zinc-200);
+  --color-default-300: var(--color-zinc-300);
+  --color-default-400: var(--color-zinc-400);
+  --color-default-500: var(--color-zinc-500);
+  --color-default-600: var(--color-zinc-600);
+  --color-default-700: var(--color-zinc-700);
+  --color-default-800: var(--color-zinc-800);
+  --color-default-900: var(--color-zinc-900);
+  --color-default-950: var(--color-zinc-950);
+
+  --text-md: 15px;
+}

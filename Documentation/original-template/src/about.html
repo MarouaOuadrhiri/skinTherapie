@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    {{> title-meta title="À Propos de Nous" }} {{> head-css}}
+</head>
+
+<body>
+
+    {{> navbar }}
+
+    <section class="relative w-full lg:py-50 md:pt-44 pt-30 md:pb-32.5 pb-25 overflow-hidden">
+        <div class="container relative z-10">
+            <div class="flex flex-col items-start gap-y-5 lg:mb-15 md:mb-12.5 mb-10">
+                <!-- Tag -->
+                <div class="inline-flex items-center gap-2 bg-primary-1/5 text-primary-1 text-xs font-medium uppercase px-3 py-1.5 rounded-full">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary-1"></span>
+                    L'esprit SkinTherapie
+                </div>
+
+                <!-- Title -->
+                <h1 class="text-4xl md:text-7xl lg:text-[90px] text-primary-3 font-medium leading-[1.1] tracking-tight max-w-4xl">
+                    Une approche<br class=""> globale pour un corps sain et harmonieux
+                </h1>
+
+                <!-- Description -->
+                <p class="text-primary-2 md:text-lg text-base max-w-2xl leading-relaxed font-medium">
+                   Nous marions l'expertise de la kinésithérapie, des soins médico-esthétiques et des thérapies régénératrices pour offrir des résultats naturels, une vitalité retrouvée et un bien-être durable du corps.
+                </p>
+            </div>
+
+            <!-- Marquee Gallery -->
+            <div class="relative w-full overflow-hidden mt-5 md:mt-10" style="mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);">
+                <!-- Scrolling Container -->
+                <div class="flex items-center gap-5 animate-marquee-horizontal w-max md:px-5 px-3">
+                    <!-- First Set of Images -->
+                    <img src="/images/gallary/gallery-6.webp" class="md:w-100 md:h-112.5 w-52 h-60 object-cover rounded-3xl shrink-0">
+                    <img src="/images/gallary/gallery-2.webp" class="md:w-100 md:h-112.5 w-52 h-60 object-cover rounded-3xl shrink-0">
+                    <img src="/images/avatar/avatar-18.webp" class="md:w-100 md:h-112.5 w-52 h-60 object-cover rounded-3xl shrink-0">
+                    <img src="/images/services/service-1.webp" class="md:w-100 md:h-112.5 w-52 h-60 object-cover rounded-3xl shrink-0">
+                    <img src="/images/services/service-4.webp" class="md:w-100 md:h-112.5 w-52 h-60 object-cover rounded-3xl shrink-0">
+
+                    <!-- Duplicate Set of Images for seamless loop -->
+                    <img src="/images/gallary/gallery-6.webp" class="md:w-100 md:h-112.5 w-52 h-60 object-cover rounded-3xl shrink-0">
+                    <img src="/images/gallary/gallery-2.webp" class="md:w-100 md:h-112.5 w-52 h-60 object-cover rounded-3xl shrink-0">
+                    <img src="/images/gallary/gallery-3.webp" class="md:w-100 md:h-112.5 w-52 h-60 object-cover rounded-3xl shrink-0">
+                    <img src="/images/gallary/gallery-4.webp" class="md:w-100 md:h-112.5 w-52 h-60 object-cover rounded-3xl shrink-0">
+                    <img src="/images/gallary/gallery-5.webp" class="md:w-100 md:h-112.5 w-52 h-60 object-cover rounded-3xl shrink-0">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="lg:pb-50 md:pb-32.5 pb-25">
+        <div class="container-medium">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-15 items-center">
+
+                <!-- Left Image -->
+                <div class="relative w-full rounded-4xl overflow-hidden group">
+                    <img src="/images/about/about-7.webp" alt="Habiba Aboukebcha" class="w-full md:h-162 h-90 object-cover">
+
+                    <!-- Gradient blur overlay for the text -->
+                    <div class="absolute bottom-0 inset-x-0 h-40 bg-primary-1/80 blur-[60px] pointer-events-none z-0"></div>
+
+                    <!-- Glassmorphism Banner -->
+                    <div class="absolute bottom-4 inset-x-4 lg:bottom-4 lg:inset-x-4 rounded-2xl bg-primary-1/10 backdrop-blur-md border border-white/20 md:p-7.5 p-3 flex items-center justify-between z-10 shadow-lg">
+                        <div class="flex flex-col text-white">
+                            <h3 class="text-xl lg:text-2xl font-medium text-white">Fondatrice & Kinésithérapeute - Skinthérapeute</h3>
+                        </div>
+                        <img src="/images/icons/mono_blanc.svg" alt="Icone Fleur" class="size-6 shrink-0 brightness-0 invert">
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="flex flex-col items-start">
+                    <!-- Title -->
+                    <h2 class="text-3xl md:text-6xl leading-[1.1] font-medium text-primary-3 mb-2.5 tracking-tight">Habiba Aboukebcha</h2>
+
+                    <!-- Subtitle -->
+                    <p class="text-primary-1 font-heading md:text-2xl text-xl font-medium mb-1">Kinésithérapeute &amp; Skinthérapeute</p>
+                    <p class="text-primary-3 font-heading md:text-lg text-base font-medium mb-5">Spécialiste en Soin Médico-Esthétique et Thérapie Régénérative • Experte en Soin de Peau Professionnel</p>
+
+                    <!-- Description -->
+                    <div class="flex flex-col gap-3 text-primary-2 md:text-base text-sm font-medium leading-relaxed md:mb-12 mb-7.5 max-w-xl">
+                        <p>Kinésithérapeute et skinthérapeute passionnée, Habiba Aboukebcha met son expertise anatomique, biomécanique et cutanée au service de la régénération et de la beauté naturelle. Spécialiste en soins médico-esthétiques de pointe et en thérapie régénérative, elle conçoit pour chaque patient(e) un accompagnement sur-mesure alliant rigueur scientifique et gestuelle experte.</p>
+                        <p>De la rééducation tissulaire au drainage lymphatique, du remodelage corporel au biohacking esthétique, sa démarche globale vise à restaurer la santé cutanée, sublimer l'harmonie des traits et stimuler la vitalité cellulaire en profondeur.</p>
+                    </div>
+
+                    <!-- List -->
+                    <div class="flex flex-col lg:gap-5 gap-2.5 w-full">
+                        <div class="flex items-center gap-2.5">
+                            <div class="bg-white shrink-0 border border-primary-1/10 rounded-full size-10 flex items-center justify-center shadow-sm">
+                                <img src="/images/icons/icon-11.svg" alt="Icon" class="size-6.5">
+                            </div>
+                            <span class="font-medium text-primary-2 md:text-lg text-base">Kinésithérapeute diplômée &amp; Skinthérapeute certifiée</span>
+                        </div>
+
+                        <div class="flex items-center gap-2.5">
+                            <div class="bg-white shrink-0 border border-primary-1/10 rounded-full size-10 flex items-center justify-center shadow-sm">
+                                <img src="/images/icons/icon-12.svg" alt="Icon" class="size-6.5">
+                            </div>
+                            <span class="font-medium text-primary-2 md:text-lg text-base">Spécialiste en Soin Médico-Esthétique &amp; Thérapie Régénérative</span>
+                        </div>
+
+                        <div class="flex items-center gap-2.5">
+                            <div class="bg-white shrink-0 border border-primary-1/10 rounded-full size-10 flex items-center justify-center shadow-sm">
+                                <img src="/images/icons/icon-13.svg" alt="Icon" class="size-6.5">
+                            </div>
+                            <span class="font-medium text-primary-2 md:text-lg text-base">Experte en Soin de Peau Professionnel &amp; Biohacking Esthétique</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section>
+        <div class="container-medium">
+            <div class="relative w-full md:rounded-3xl rounded-lg overflow-hidden shadow-sm lg:h-140 md:h-78 h-75">
+                <!-- Background Image -->
+                <img src="/images/gallary/gallery-6.webp" alt="Stats Clinique" class="absolute inset-0 w-full h-full object-cover bg-cover">
+
+                <!-- Dark Gradient Overlay for text readability -->
+                <div class="absolute inset-x-0 bottom-0 h-50 bg-primary-1/60 z-0 blur-[40px] pointer-events-none"></div>
+
+                <!-- Stats Grid -->
+                <div class="absolute bottom-0 inset-x-0 z-10 w-full pb-7.5 md:pb-15 px-7.5">
+                    <div class="grid grid-cols-3 lg:gap-12.5 gap-x-5 gap-y-7.5 text-center max-w-4xl mx-auto">
+
+                        <div class="flex flex-col items-center">
+                            <div class="text-3xl md:text-6xl lg:text-7xl font-medium font-heading text-white mb-1 leading-none">2K+</div>
+                            <div class="text-white text-xs md:text-sm font-medium tracking-wide">Patients</div>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <div class="text-3xl md:text-6xl lg:text-7xl font-medium font-heading text-white mb-1 leading-none">98%</div>
+                            <div class="text-white text-xs md:text-sm font-medium tracking-wide">Succès</div>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <div class="text-3xl md:text-6xl lg:text-7xl font-medium font-heading text-white mb-1 leading-none">50+</div>
+                            <div class="text-white text-xs md:text-sm font-medium tracking-wide">Rituels</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Care Section -->
+    <section class="lg:py-50 md:py-32.5 py-25">
+        <div class="container">
+            <!-- Header -->
+            <div class="flex flex-col items-center text-center max-w-3xl mx-auto lg:mb-15 mb-12.5">
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-heading font-medium text-primary-3 mb-2.5 tracking-tight">Comment nous prenons soin de vous</h2>
+                <p class="text-primary-2 md:text-lg font-medium max-w-2xl leading-relaxed">Nous allions l'expertise kinésithérapique et médico-esthétique à la précision des gestes pour offrir des résultats authentiques qui respectent votre équilibre naturel.</p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:gap-15 md:gap-4 gap-7.5 items-end">
+
+                <!-- Left Column -->
+                <div class="flex flex-col gap-7.5 md:gap-15">
+                    <!-- Feature 1 -->
+                    <div class="flex md:flex-row flex-col items-start justify-end lg:gap-5 gap-4 md:text-right text-left">
+                        <div class="flex flex-col gap-1.5 md:order-1 order-2">
+                            <h3 class="text-xl lg:text-2xl font-heading font-medium text-primary-3">Plans de soins personnalisés</h3>
+                            <p class="text-primary-2 text-sm md:text-base font-medium lg:max-w-[300px] max-w-sm ml-auto">Révéler l'éclat, stimuler le collagène et retrouver une texture de peau lissée.</p>
+                        </div>
+                        <div class="bg-white rounded-lg lg:size-17.5 size-12.5 flex shrink-0 items-center justify-center md:order-2 order-1">
+                            <img src="/images/icons/icon-35.svg" class="size-7.5 lg:size-10">
+                        </div>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="flex md:flex-row flex-col items-start justify-end lg:gap-5 gap-4 md:text-right text-left">
+                        <div class="flex flex-col gap-1.5 md:order-1 order-2">
+                            <h3 class="text-xl lg:text-2xl font-heading font-medium text-primary-3">Sécurité et protocoles certifiés</h3>
+                            <p class="text-primary-2 text-sm md:text-base font-medium lg:max-w-[300px] max-w-sm ml-auto">Des protocoles rigoureux et des technologies de pointe pour votre totale sérénité.</p>
+                        </div>
+                        <div class="bg-white rounded-lg lg:size-17.5 size-12.5 flex shrink-0 items-center justify-center md:order-2 order-1">
+                            <img src="/images/icons/icon-36.svg" class="size-7.5 lg:size-10">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Column (Circular Video/Image) -->
+                <div class="flex justify-center shrink-0">
+                    <div class="relative md:h-128 h-95 md:w-98 w-86 rounded-full overflow-hidden shadow-sm">
+                        <video src="/videos/gallery-video.mp4" class="w-full h-full object-cover" autoplay loop muted playsinline></video>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="flex flex-col gap-7.5 md:gap-15">
+                    <!-- Feature 3 -->
+                    <div class="flex md:flex-row flex-col items-start gap-5 text-left">
+                        <div class="bg-white rounded-lg lg:size-17.5 size-12.5 flex shrink-0 items-center justify-center">
+                            <img src="/images/icons/icon-37.svg" class="size-7.5 lg:size-10">
+                        </div>
+                        <div class="flex flex-col gap-1.5">
+                            <h3 class="text-xl lg:text-2xl font-heading font-medium text-primary-3">Technologies de Nouvelle Génération</h3>
+                            <p class="text-primary-2 text-sm md:text-base font-medium max-w-xs">Des technologies médico-esthétiques avancées pour des traitements précis, personnalisés et adaptés à vos besoins.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="flex md:flex-row flex-col items-start gap-5 text-left">
+                        <div class="bg-white rounded-lg lg:size-17.5 size-12.5 flex shrink-0 items-center justify-center">
+                            <img src="/images/icons/icon-38.svg" class="size-7.5 lg:size-10">
+                        </div>
+                        <div class="flex flex-col gap-1.5">
+                            <h3 class="text-xl lg:text-2xl font-heading font-medium text-primary-3">Un lieu qui apaise</h3>
+                            <p class="text-primary-2 text-sm md:text-base font-medium max-w-xs">Une parenthèse de calme pour traiter les signes de l'âge et la fatigue cutanée.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Gallery Section -->
+    <section class="lg:py-50 md:py-32.5 py-25 bg-primary-5">
+        <div class="container-medium">
+            <!-- Header -->
+            <div class="flex flex-col items-center text-center max-w-3xl mx-auto lg:mb-15 md:mb-12.5 mb-10">
+                <!-- Tag -->
+                <div class="inline-flex items-center gap-2 bg-primary-1/10 text-primary-1 text-xs font-medium uppercase px-3 py-1.5 rounded-full lg:mb-7.5 mb-2.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary-1"></span>
+                    L'excellence dans chaque détail
+                </div>
+
+                <h2 class="text-3xl md:text-6xl lg:text-7xl leading-[1.1] font-heading font-medium text-primary-3 tracking-tight">Un espace dédié au calme et à la discrétion</h2>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 md:gap-5 gap-2.5" data-toggle="gallery">
+                <!-- Image 1 -->
+                <a href="images/about/about-10.webp" class="overflow-hidden group">
+                    <img src="/images/about/about-10.webp" class="w-full h-full object-cover md:rounded-3xl rounded-lg" />
+                </a>
+
+                <!-- Image 2 -->
+                <a href="images/about/hero-dashboard.jpg" class="overflow-hidden group">
+                    <img src="/images/about/hero-dashboard.jpg" class="w-full h-full object-cover md:rounded-3xl rounded-lg" />
+                </a>
+
+                <!-- Image 3 -->
+                <a href="images/about/about-12.webp" class="overflow-hidden group">
+                    <img src="/images/about/about-12.webp" class="w-full h-full object-cover md:rounded-3xl rounded-lg" />
+                </a>
+
+                <!-- Image 4 -->
+                <a href="images/about/about-21.webp" class="overflow-hidden group">
+                    <img src="/images/about/about-21.webp" class="w-full h-full object-cover md:rounded-3xl rounded-lg" />
+                </a>
+
+                <!-- Image 5 -->
+                <a href="images/about/about-22.webp" class="overflow-hidden group">
+                    <img src="/images/about/about-22.webp" class="w-full h-full object-cover md:rounded-3xl rounded-lg" />
+                </a>
+
+                <!-- Image 6 -->
+                <a href="images/about/about-23.webp" class="overflow-hidden group">
+                    <img src="/images/about/about-23.webp" class="w-full h-full object-cover md:rounded-3xl rounded-lg" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    {{> footer }}
+
+</body>
+
+</html>

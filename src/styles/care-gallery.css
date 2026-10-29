@@ -1,0 +1,28 @@
+.care-gallery { padding: 0 clamp(1rem, 5vw, 6.25rem) clamp(5rem, 10vw, 12.5rem); }
+.care-gallery-grid { max-width: 1280px; margin: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.care-gallery-photo { position: relative; margin: 0; overflow: hidden; border-radius: 1.5rem; aspect-ratio: 4 / 5; background: var(--color-primary); }
+.care-gallery-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms ease; }
+.care-gallery-photo:hover img { transform: scale(1.025); }
+.care-gallery-photo::after { content: ''; position: absolute; inset: 50% 0 0; background: linear-gradient(transparent, rgb(20 35 24 / 65%)); pointer-events: none; }
+.care-gallery-photo figcaption { position: absolute; z-index: 1; bottom: 1rem; left: 1rem; right: 1rem; color: white; font-size: .8125rem; line-height: 1.4; }
+.care-gallery-photo-1 { grid-area: 1 / 1; }
+.care-gallery-photo-2 { grid-area: 1 / 2; }
+.care-gallery-photo-3 { grid-area: 3 / 1; }
+.care-gallery-photo-4 { grid-area: 3 / 2; }
+.care-gallery-intro { grid-area: 2 / 1 / 3 / -1; text-align: center; padding: 2.5rem .25rem; }
+.care-gallery-eyebrow { display: inline-block; padding: .5rem 1rem; border: 1px solid var(--color-desert-taupe); border-radius: 999px; background: var(--color-primary); color: var(--color-primary-1); font-size: .6875rem; letter-spacing: .07em; text-transform: uppercase; }
+.care-gallery-intro h2 { max-width: 960px; margin: 1.5rem auto; font-size: clamp(1.75rem, 3.2vw, 3rem); line-height: 1.35; font-weight: 500; color: var(--color-primary-3); }
+.care-gallery-intro p { font-size: .875rem; line-height: 1.6; }
+.care-gallery-link { display: inline-flex; align-items: center; gap: 1.5rem; margin-top: 1.25rem; padding: .75rem 1.25rem; border-radius: 999px; border: 1px solid var(--color-primary-1); color: var(--color-primary-1); font-size: .875rem; transition: background 200ms ease; }
+.care-gallery-link:hover { background: var(--color-primary); }
+.care-gallery-link:focus-visible { outline: 2px solid var(--color-primary-1); outline-offset: 4px; }
+@media (min-width: 768px) {
+  .care-gallery-grid { gap: 1.5rem; }
+  .care-gallery-photo { width: clamp(260px, 30vw, 380px); aspect-ratio: 5 / 4; border-radius: 2rem; }
+  .care-gallery-photo-2, .care-gallery-photo-4 { justify-self: end; }
+  .care-gallery-photo-2 { margin-top: 3rem; }
+  .care-gallery-photo-3 { margin-top: 3rem; }
+  .care-gallery-intro { padding: 2rem; }
+  .care-gallery-photo figcaption { bottom: 1.25rem; left: 1.5rem; font-size: .9375rem; }
+}
+@media (prefers-reduced-motion: reduce) { .care-gallery-photo img, .care-gallery-link { transition: none; } }

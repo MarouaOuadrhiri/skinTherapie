@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    {{> title-meta title="Contact — SkinTherapie" }} {{> head-css}}
+</head>
+
+<body>
+
+    {{> navbar }}
+
+    <!-- Contact Section -->
+    <section class="lg:py-50 md:pt-46 md:pb-32 pt-30 pb-25">
+        <div class="container">
+            <!-- Header -->
+            <div class="flex flex-col items-center text-center mx-auto lg:mb-15 mb-12.5">
+                <h1 class="text-[42px] md:text-7xl lg:text-[90px] font-heading font-medium text-primary-3 tracking-tight">Entrez en contact</h1>
+            </div>
+
+            <!-- Main Container -->
+            <div class="bg-primary-5 rounded-4xl lg:p-12.5 md:p-8 p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-15 items-center">
+
+                    <!-- Left Column: Form -->
+                    <div class="flex flex-col">
+                        <h2 class="text-3xl md:text-4xl lg:text-[46px] font-heading font-medium text-primary-3 md:mb-10 mb-7.5">Nous sommes là pour vous accompagner</h2>
+
+                        <form class="flex flex-col gap-5">
+                            <!-- Row 1 -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="text-sm font-medium text-primary-2 mb-2.5 block">Nom complet*</label>
+                                    <input type="text" placeholder="Votre nom" class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none">
+                                </div>
+                                <div>
+                                    <label class="text-sm font-medium text-primary-2 mb-2.5 block">Email*</label>
+                                    <input type="email" placeholder="votre@email.com" class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none">
+                                </div>
+                            </div>
+
+                            <!-- Row 2 -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="text-sm font-medium text-primary-2 mb-2.5 block">Téléphone*</label>
+                                    <input type="tel" placeholder="05 35 51 18 15" class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none">
+                                </div>
+                                <div>
+                                    <label class="text-sm font-medium text-primary-2 mb-2.5 block">Objet*</label>
+                                    <input type="text" placeholder="Sujet de votre message" class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none">
+                                </div>
+                            </div>
+
+                            <!-- Row 3 -->
+                            <div>
+                                <label class="text-sm font-medium text-primary-2 mb-2.5 block">Comment pouvons-nous vous aider ?</label>
+                                <textarea rows="4" placeholder="Votre message ici..." class="w-full bg-primary-4 border-0 rounded-lg p-3 text-base placeholder:text-primary-3 focus:ring-1 focus:ring-primary-1 outline-none"></textarea>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="flex items-start gap-3 mt-1">
+                                <input type="checkbox" id="updates" class="size-5 rounded border border-primary-2/30 text-primary-1 focus:ring-primary-1 bg-white cursor-pointer accent-primary-1">
+                                <label for="updates" class="text-xs md:text-sm font-medium text-primary-2 cursor-pointer mt-0.5">
+                                    Je souhaite recevoir des actualités sur les rituels, des conseils pour ma peau et des offres exclusives.
+                                </label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="w-full bg-primary-1 hover:bg-white hover:text-primary-1 border border-transparent hover:border-primary-3 text-white font-medium py-2.5 px-5 text-sm rounded-full transition-all">
+                                Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Right Column: Image & Overlay -->
+                    <div class="relative w-full h-full min-h-[400px] lg:min-h-132 rounded-2xl overflow-hidden group">
+                        <!-- Background Image -->
+                        <img src="/images/about/about-13.webp" alt="Consultation SkinTherapie" class="absolute inset-0 w-full h-full object-cover">
+
+                        <!-- Glassmorphism Clinic Hours Overlay -->
+                        <div class="absolute bottom-3 inset-x-3 lg:bottom-5 lg:inset-x-5">
+                            <div class="bg-primary-1/60 backdrop-blur-sm border border-white/10 rounded-2xl lg:p-7.5 md:p-5 p-3 shadow-2xl">
+                                <h3 class="text-xl md:text-2xl font-heading font-medium text-white md:mb-6 mb-2.5">Horaires d'ouverture</h3>
+
+                                <div class="flex flex-col md:gap-5 gap-2">
+                                    <!-- Row 1 -->
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-white text-sm md:text-base font-medium">Lundi - Vendredi</span>
+                                        <span class="text-white text-sm md:text-base font-medium text-right">10:00 – 19:00</span>
+                                    </div>
+
+                                    <!-- Row 2 -->
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-white text-sm md:text-base font-medium">Samedi</span>
+                                        <span class="text-white text-sm md:text-base font-medium text-right">10:00 – 19:00</span>
+                                    </div>
+
+                                    <!-- Row 3 -->
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-white text-sm md:text-base font-medium">Dimanche</span>
+                                        <span class="text-white text-sm md:text-base font-medium text-right">Fermé</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="pb-25 md:pb-32.5 lg:pb-50">
+        <div class="container-medium">
+            <!-- Header -->
+            <div class="flex flex-col items-center text-center mx-auto mb-10 lg:mb-15">
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-heading font-medium text-primary-3 mb-2.5 tracking-tight">Notre cabinet</h2>
+                <p class="text-primary-2 text-lg font-medium">Un espace de soin d'exception au cœur de Hamria, Meknès</p>
+            </div>
+
+            <!-- Locations Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                <!-- Card 1 -->
+                <div class="relative w-full rounded-3xl lg:rounded-2xl overflow-hidden group min-h-75 lg:min-h-135">
+                    <img src="/images/about/about-14.webp" alt="Cabinet Habiba Aboukebcha" class="absolute inset-0 w-full h-full object-cover">
+
+                    <!-- Overlay Info -->
+                    <div class="absolute bottom-4 inset-x-4 lg:bottom-5 lg:inset-x-5">
+                        <div class="bg-linear-to-b from-transparent to-primary-1/85 backdrop-blur-md border border-white/5 rounded-2xl p-3 md:p-5 lg:p-7.5 flex flex-col md:gap-7.5 gap-2.5">
+                            <div class="lg:flex items-center justify-between">
+                                <h3 class="text-xl font-heading font-medium text-white">Cabinet Habiba Aboukebcha</h3>
+                                <a href="https://maps.google.com/?q=Rue+Badr+Al+Kobra+Hamria+Meknes" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white hover:underline font-medium">
+                                    Voir sur la carte
+                                    <div class="flex items-center justify-center size-5 bg-white rounded-full text-primary-1">
+                                        <i class="iconify lucide--arrow-right size-3.5"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="flex flex-col md:gap-4 gap-2.5">
+                                <div class="flex items-center gap-2.5">
+                                    <div class="bg-white rounded-lg lg:size-12 md:size-10 size-9 flex items-center justify-center shrink-0">
+                                        <i class="iconify lucide--map-pin text-primary-1 lg:size-6 size-5"></i>
+                                    </div>
+                                    <p class="text-white font-medium lg:text-base text-sm leading-relaxed">
+                                        Immeuble Business Center 1, Rez-de-chaussée, Rue Badr Al Kobra, Hamria, Meknès
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-2.5">
+                                    <div class="bg-white rounded-lg lg:size-12 md:size-10 size-9 flex items-center justify-center shrink-0">
+                                        <i class="iconify lucide--phone text-primary-1 lg:size-6 size-5"></i>
+                                    </div>
+                                    <a href="tel:+212535511815" class="text-white font-medium lg:text-base text-sm hover:underline">
+                                        Tél. Fixe : 05 35 51 18 15
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative w-full rounded-3xl lg:rounded-2xl overflow-hidden group min-h-75 lg:min-h-135">
+                    <img src="/images/about/about-10.webp" alt="Rendez-vous et Contact WhatsApp" class="absolute inset-0 w-full h-full object-cover">
+
+                    <!-- Overlay Info -->
+                    <div class="absolute bottom-4 inset-x-4 lg:bottom-5 lg:inset-x-5">
+                        <div class="bg-linear-to-b from-transparent to-primary-1/85 backdrop-blur-md border border-white/5 rounded-2xl p-3 md:p-5 lg:p-7.5 flex flex-col md:gap-7.5 gap-2.5">
+
+                            <div class="lg:flex items-center justify-between">
+                                <h3 class="text-xl font-heading font-medium text-white">Prise de RDV & WhatsApp</h3>
+                                <a href="https://wa.me/212613615758" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white hover:underline font-medium">
+                                    Discuter sur WhatsApp
+                                    <div class="flex items-center justify-center size-5 bg-white rounded-full text-primary-1">
+                                        <i class="iconify lucide--arrow-right size-3.5"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="flex flex-col md:gap-4 gap-2.5">
+                                <div class="flex items-center gap-2.5">
+                                    <div class="bg-white rounded-lg lg:size-12 md:size-10 size-9 flex items-center justify-center shrink-0">
+                                        <i class="iconify tabler--brand-whatsapp text-primary-1 lg:size-6 size-5"></i>
+                                    </div>
+                                    <a href="https://wa.me/212613615758" target="_blank" rel="noopener noreferrer" class="text-white font-medium lg:text-base text-sm hover:underline">
+                                        WhatsApp : 06 13 61 57 58
+                                    </a>
+                                </div>
+                                <div class="flex items-center gap-2.5">
+                                    <div class="bg-white rounded-lg lg:size-12 md:size-10 size-9 flex items-center justify-center shrink-0">
+                                        <i class="iconify lucide--clock text-primary-1 lg:size-6 size-5"></i>
+                                    </div>
+                                    <p class="text-white font-medium lg:text-base text-sm">
+                                        Horaires de consultation : 10:00 – 19:00
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="pb-25 md:pb-32.5 lg:pb-50">
+        <div class="container">
+            <div class="max-w-3xl mx-auto">
+                
+                <div class="flex flex-col items-center text-center lg:mb-15 mb-10">
+                    <h2 class="text-3xl md:text-6xl font-heading font-medium text-primary-3 tracking-tight">Questions fréquentes</h2>
+                </div>
+
+                <div class="hs-accordion-group flex flex-col gap-5 w-full">
+
+                    <div class="hs-accordion active bg-white hs-accordion-active:bg-primary-5 rounded-2xl p-5 transition-colors" id="faq-1">
+                        <button class="hs-accordion-toggle inline-flex items-center justify-between w-full font-medium text-primary-3 md:text-xl font-heading transition text-left" aria-controls="faq-collapse-1">
+                            Comment réserver mon premier rituel ?
+                            <span class="size-8 shrink-0 flex justify-center items-center text-primary-1 hs-accordion-active:bg-white rounded-full transition-colors">
+                                <i class="iconify lucide--plus size-5 hs-accordion-active:rotate-135 transition-all duration-500"></i>
+                            </span>
+                        </button>
+                        <div id="faq-collapse-1" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="faq-1">
+                            <p class="text-primary-2 mt-5 text-sm md:text-base leading-[1.4] max-w-2xl font-medium">
+                                Nous commençons par une consultation détaillée pour comprendre l'histoire de votre peau, vos préoccupations et vos objectifs à long terme.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hs-accordion bg-white hs-accordion-active:bg-primary-5 rounded-2xl p-5 transition-colors" id="faq-2">
+                        <button class="hs-accordion-toggle inline-flex items-center justify-between w-full font-medium text-primary-3 md:text-xl font-heading transition text-left" aria-controls="faq-collapse-2">
+                            Proposez-vous des consultations de diagnostic ?
+                            <span class="size-8 shrink-0 flex justify-center items-center text-primary-1 hs-accordion-active:bg-white rounded-full transition-colors">
+                                <i class="iconify lucide--plus size-5 hs-accordion-active:rotate-135 transition-all duration-500"></i>
+                            </span>
+                        </button>
+                        <div id="faq-collapse-2" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="faq-2">
+                            <p class="text-primary-2 mt-5 text-sm md:text-base leading-[1.4] max-w-2xl font-medium">
+                                Oui, nous proposons des consultations préliminaires pour définir vos besoins cutanés. Contactez notre accueil pour connaître les modalités et disponibilités.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hs-accordion bg-white hs-accordion-active:bg-primary-5 rounded-2xl p-5 transition-colors" id="faq-3">
+                        <button class="hs-accordion-toggle inline-flex items-center justify-between w-full font-medium text-primary-3 md:text-xl font-heading transition text-left" aria-controls="faq-collapse-3">
+                            Que dois-je apporter lors de mon rendez-vous ?
+                            <span class="size-8 shrink-0 flex justify-center items-center text-primary-1 hs-accordion-active:bg-white rounded-full transition-colors">
+                                <i class="iconify lucide--plus size-5 hs-accordion-active:rotate-135 transition-all duration-500"></i>
+                            </span>
+                        </button>
+                        <div id="faq-collapse-3" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="faq-3">
+                            <p class="text-primary-2 mt-5 text-sm md:text-base leading-[1.4] max-w-2xl font-medium">
+                                Il est utile d'apporter la liste de vos soins actuels et tout antécédent médical pertinent pour nous aider à personnaliser votre rituel.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hs-accordion bg-white hs-accordion-active:bg-primary-5 rounded-2xl p-5 transition-colors" id="faq-4">
+                        <button class="hs-accordion-toggle inline-flex items-center justify-between w-full font-medium text-primary-3 md:text-xl font-heading transition text-left" aria-controls="faq-collapse-4">
+                            Les soins sont-ils douloureux ?
+                            <span class="size-8 shrink-0 flex justify-center items-center text-primary-1 hs-accordion-active:bg-white rounded-full transition-colors">
+                                <i class="iconify lucide--plus size-5 hs-accordion-active:rotate-135 transition-all duration-500"></i>
+                            </span>
+                        </button>
+                        <div id="faq-collapse-4" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="faq-4">
+                            <p class="text-primary-2 mt-5 text-sm md:text-base leading-[1.4] max-w-2xl font-medium">
+                                La majorité de nos rituels sont non invasifs et d'une grande douceur. Votre confort est notre priorité et nous utilisons des agents apaisants si nécessaire.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    {{> footer }}
+
+</body>
+
+</html>
